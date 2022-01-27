@@ -1,0 +1,13 @@
+@import "../sass/variable.scss";
+@import "../sass/animation.scss";
+
+.item {
+  margin: 2rem 4rem;
+  color: $color-white;
+  background-color: $color-primary-dark;
+  padding: 1rem 3rem;
+  font-size: 1.6rem;
+  border-radius: 1rem;
+  animation: moveDownUp ease-in 1s;
+  -webkit-animation: moveDownUp ease-in 1s;
+}

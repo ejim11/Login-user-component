@@ -1,0 +1,40 @@
+@import "../sass/variable.scss";
+
+.error {
+  background-color: $color-white;
+  border-radius: 1rem;
+  overflow: hidden;
+  width: 80vw;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+
+  & h3 {
+    padding: 0.8rem 1.5rem;
+    background-color: $color-primary-dark;
+    color: $color-primary;
+    font-size: 2.5rem;
+  }
+
+  & p {
+    font-size: 1.5rem;
+    padding: 1.3rem 1.5rem;
+    color: $color-primary-dark;
+  }
+  & button {
+    position: absolute;
+    color: $color-white;
+    background-color: $color-primary-dark;
+    display: flex;
+    text-align: center;
+    bottom: 0;
+    right: 0;
+    margin: 1.5rem 2rem;
+
+    &::after {
+      background-color: $color-primary-dark;
+    }
+  }
+}
