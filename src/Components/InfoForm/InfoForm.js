@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import styles from "./InfoForm.module.scss";
 import Button from "../UI/Button";
+import Wrapper from "../Helpers/Wrapper";
 
 const InfoForm = (props) => {
   // STATES
@@ -37,7 +38,7 @@ const InfoForm = (props) => {
 
   // RETURN
   return (
-    <div>
+    <Wrapper>
       <form className={styles.form} onSubmit={submitFormHandler}>
         <div
           className={`${styles["form__input"]} ${styles["form__input-username"]}`}
@@ -69,7 +70,7 @@ const InfoForm = (props) => {
           Add User
         </Button>
       </form>
-    </div>
+    </Wrapper>
   );
 };
 
